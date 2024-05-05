@@ -393,104 +393,12 @@ header .logo a:hover{
 }
 
 
-/* ///////////////////  My Skills  ////////////////////// */
-
-.skills{
-    height: auto;
-    width: 100%;
-    padding: 100px;
-    background: #170550;
-    overflow: hidden;
-}
-
-.skills-all{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skills-info{
-    width: 80%;
-
-}
-
-.skill{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFF;
-    font-size: 22px;
-    margin-bottom: 30px;
-
-}
-
-.skill h3:first-child {
-    min-width: 50px;
-    font-size: 40px;
-}
-
-.fa-html5{
-    color: #DD4B25;
-}
-.fa-css3-alt{
-    color: #254BDD;
-}
-.fa-bootstrap{
-    color: #7610F0;
-}
-.fa-js{
-    color: #EFD81D;
-}
-
-
-.skill-bar{
-    width: 65%;
-    padding: 3px 0;
-    border-radius: 25px;
-    background: #43366A;
-    overflow: hidden;
-}
-
-.skill-bar .div-1{
-    padding: 6px 0;
-    width: 80%;
-    background: #F86F03;
-    border-radius: 25px;
-}
-.skill-bar .div-2{
-    padding: 6px 0;
-    width: 75%;
-    background: #F86F03;
-    border-radius: 25px;
-}
-.skill-bar .div-3{
-    padding: 6px 0;
-    width: 60%;
-    background: #F86F03;
-    border-radius: 25px;
-}
-.skill-bar .div-4{
-    padding: 6px 0;
-    width: 50%;
-    background: #F86F03;
-    border-radius: 25px;
-}
-
-@media (max-width: 1100px){
-    .skills-all{
-        width: 100%;
-    }
-
-    .skills-info{
-        width: 100%;
-    }
-}
 
 /* ////////////////////////portfolio     */
 
 .portfolio{
     padding: 100px 0;
-    background: #31065A;
+    background: #170550;
 }
 
 .portfolio-all{
@@ -564,12 +472,8 @@ header .logo a:hover{
 /* ////////////////////// */
 
 .contact{
-    background: #170550;
+    background: #31065A;
     padding: 100px 0;
-}
-
-.contact-all{
-
 }
 
 .contact-all-pr{
@@ -669,7 +573,7 @@ form .btn:hover{
 
 footer{
     height: 100px;
-    background: #31065A;
+    background: #170550;
     color: #FFF;
     display: flex;
     align-items: center;
