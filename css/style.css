@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    height: 100px;
+    background: #170550;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .all {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo a{
+    font-size: 30px;
+    font-weight: 900;
+    color: #F86F03;
+}
+header .logo a:hover{
+
+    color: #F86F03;
+}
+
+.all ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.all  a{
+    color: #FFF;
+    font-size: 18px;
+}
+.all  a:hover{
+    color: #F86F03;
+    transition: .5s ease;
+}
+
+.all .button a{
+    display: inline-block;
+    padding: 5px 20px;
+    background: #FFF;
+    color: #461959;
+    border-radius: 25px;
+}
+.all .button a:hover{
+    background: #F86F03;
+    color: #FFF;
+    transition: .5s ease;
+}
+
+
+.mobile-nav{
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    z-index: 55;
+    display: none;
+    justify-content: center;
+    background: #16055077;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.mobile-nav ul{
+    list-style: none;
+}
+
+.mobile-nav li{
+    margin: 20px 0;
+}
+.mobile-nav li a{
+    color: #FFF;
+    font-size: 18px;
+}
+.mobile-nav li a:hover{
+    color: #F86F03;
+    transition: .5s ease;
+}
+
+.menu-bar{
+    cursor: pointer;
+    color: #FFF;
+    font-size: 20px;
+    display: none;
+}
+
+@media (max-width:1100PX){
+    .pc-nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        justify-content: center;
+        background: #16055044;
+        
+    }
+    .mobile-nav ul{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+}
+
+
+/* ///////////////////  Banner  ////////////////////// */
+
+.banner{
+    min-height: 100vh;
+    background: #31065A;
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner-par{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.banner .banner-par .text{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.banner .li-1{
+    font-size: 30px;
+    color: #F86F03;
+}
+.banner .li-2{
+    font-size: 60px;
+    color: #FFF;
+}
+.banner .li-3{
+    font-size: 35px;
+    color: #FFF;
+}
+.banner .li-3 span{
+
+    color: #F86F03;
+}
+
+.banner .prag{
+    font-size: 20px;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+.banner .social{
+    margin: 20px 0;
+}
+
+.banner .social a{
+    font-size: 20px;
+    color: #FFF;
+    margin: 0 20px 0 0;
+}
+
+.banner .banner-btn a{
+    display: inline-block;
+    padding: 5px 20px;
+    background: #F86F03;
+    color: #FFF;
+    border-radius: 25px;
+    font-size: 18px;
+}
+.banner .banner-btn a:hover{
+    background: #FFF;
+    color: #461959;
+    transition: .5s ease;
+}
+
+.banner .img{
+    width: 50%;
+}
+
+.banner .img img{
+    width: 100%;
+}
+
+@media (max-width: 1100px){
+    .banner{
+        padding: 100px 0;
+    }
+    .banner-par{
+        flex-direction: column-reverse;
+
+    }
+
+    .banner .banner-par .text{
+        width: 100%;
+    }
+
+    .banner .banner-par .text .li-1{
+        font-size: 20px;
+    }
+
+    .banner .banner-par .text .li-2{
+        font-size: 40px;
+    }
+
+    .banner .banner-par .text .li-3{
+        font-size: 25px;
+    }
+
+    .banner .img{
+        width: 100%;
+    }
+}
+
+/* ///////////////////  About Me  ////////////////////// */
+
+.about{
+    height: auto;
+    padding: 100px 0;
+    background: #170550;
+    overflow: hidden;
+}
+
+.about-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title{
+    font-size: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50% , 0);
+    padding: 35px 10px 5px 10px;
+    color: #FFF;
+    display: inline-block;
+    margin: 0 auto 80px auto;
+    border-bottom: 2px solid #FFF;
+}
+.title span{
+    color: #F86F03;
+}
+
+
+.about-pr{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-img{
+    width: 40%;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-text{
+    width: 65%;
+}
+
+.about-li-1{
+    font-size: 30px;
+    color: #FFf;
+    margin: 0 0 20px 0;
+}
+.about-text p{
+    font-size: 18px;
+    color: #FFf;
+    margin: 0 0 20px 0;
+}
+
+.about .about-btn {
+    padding: 20px 0 0 0;
+}
+
+.about-btn a{
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #461959;
+    background: #FFF;
+}
+.about-btn a:hover{
+    color: #FFF;
+    background: #F86F03;
+    transition: .5s ease;
+}
+
+@media (max-width: 1100px){
+    .about-pr{
+        flex-direction: column;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+}
+
+
+/* ///////////////////  Cervices  ////////////////////// */
+
+
+.services{
+    height: auto;
+    padding: 100px 0;
+    background: #31065A;
+    overflow: hidden;
+}
+
+.services-all{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.services .cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.services .card{
+    padding: 30px 20px;
+    background: #FFF;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.services .card-logo{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.services .card-title{
+    font-size: 25px;
+    color: #170550;
+    margin-bottom: 30px;
+}
+
+.services .card p{
+    font-size: 18px;
+    color: #170550;
+}
+
+@media (max-width: 1100px){
+    .services .cards{
+        flex-direction: column;
+    }
+}
+
+
+/* ///////////////////  My Skills  ////////////////////// */
+
+.skills{
+    height: auto;
+    width: 100%;
+    padding: 100px;
+    background: #170550;
+    overflow: hidden;
+}
+
+.skills-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-info{
+    width: 80%;
+
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    font-size: 22px;
+    margin-bottom: 30px;
+
+}
+
+.skill h3:first-child {
+    min-width: 50px;
+    font-size: 40px;
+}
+
+.fa-html5{
+    color: #DD4B25;
+}
+.fa-css3-alt{
+    color: #254BDD;
+}
+.fa-bootstrap{
+    color: #7610F0;
+}
+.fa-js{
+    color: #EFD81D;
+}
+
+
+.skill-bar{
+    width: 65%;
+    padding: 3px 0;
+    border-radius: 25px;
+    background: #43366A;
+    overflow: hidden;
+}
+
+.skill-bar .div-1{
+    padding: 6px 0;
+    width: 80%;
+    background: #F86F03;
+    border-radius: 25px;
+}
+.skill-bar .div-2{
+    padding: 6px 0;
+    width: 75%;
+    background: #F86F03;
+    border-radius: 25px;
+}
+.skill-bar .div-3{
+    padding: 6px 0;
+    width: 60%;
+    background: #F86F03;
+    border-radius: 25px;
+}
+.skill-bar .div-4{
+    padding: 6px 0;
+    width: 50%;
+    background: #F86F03;
+    border-radius: 25px;
+}
+
+@media (max-width: 1100px){
+    .skills-all{
+        width: 100%;
+    }
+
+    .skills-info{
+        width: 100%;
+    }
+}
+
+/* ////////////////////////portfolio     */
+
+.portfolio{
+    padding: 100px 0;
+    background: #31065A;
+}
+
+.portfolio-all{
+
+
+}
+
+.portfolio-all .cards{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.portfolio-all .cards .card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-all .cards .card img{
+    width: 100%;
+}
+
+.portfolio-all .cards .card .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #ae5bfb60;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.portfolio-all .cards .card:hover .overlay{
+    left: 0;
+    bottom: 0;
+    transition: .2s ease;
+}
+
+.portfolio-all .overlay{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+}
+.portfolio-all .overlay h4{
+    margin: 10px 0 0 0;
+}
+
+@media (max-width:1100px){
+    .portfolio-all .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:800px){
+    .portfolio-all .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:650px){
+    .portfolio-all .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* ////////////////////// */
+
+.contact{
+    background: #170550;
+    padding: 100px 0;
+}
+
+.contact-all{
+
+}
+
+.contact-all-pr{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-text{
+    width: 50%;
+    color: #FFf;
+    font-size: 20px;
+}
+
+.contact-li{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 50%;
+}
+
+form input{
+    height: 40px;
+    width: 100%;
+    background: #43366A;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+form input:focus{
+    border: 2px solid #DD4B25;
+    transition: .4s ease;
+}
+
+.input-pr{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+form textarea{
+    width: 100%;
+    height: 148px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #43366A;
+    margin-bottom: 20px;
+}
+
+form textarea:focus{
+    border: 2px solid #DD4B25;
+    transition: .4s ease;
+
+}
+
+form .btn{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    cursor: pointer;
+}
+form .btn:hover{
+    background: #DD4B25;
+    transition: .4s ease;
+}
+
+@media (max-width:800px){
+    .contact-all-pr{
+        flex-direction: column;
+    }
+
+    .contact-text{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+
+/* //////////////////  Footer ////////// */
+
+footer{
+    height: 100px;
+    background: #31065A;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    width: 80%;
+    font-size: 20px;
+}
+footer p span{
+    color: #F86F03;
+}
+
+@media (max-width:800px){
+    footer p{
+        width: 92%;
+        font-size: 14px;
+    }
+}
+
