@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     height: 100px;
     background: #170550;
