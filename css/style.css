@@ -133,6 +133,112 @@ header .logo a:hover{
 }
 
 
+/* ///////////////  Loding   ////////////// */
+
+
+.loding{
+    width: 100%;
+    height: 100vh;
+    background: #170550;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+}
+
+.an{
+    border-radius: 2px;
+    -webkit-box-shadow: -4px 7px 52px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 7px 52px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 7px 52px 0px rgba(0,0,0,0.75);
+}
+
+.grid > .l-1{
+    background: #F86F03;
+    animation: orange-blue 1s infinite;
+}
+.grid > .l-2{
+    background: #170550;
+    animation: blue-orange 1s infinite;
+
+}
+.grid > .l-3{
+    background: #F86F03;
+    animation: orange-blue 1s infinite;
+    
+}
+
+.grid > .l-4{
+    background: #170550;
+    animation: blue-orange 1s infinite;
+
+}
+.grid > .l-5{
+    background: #F86F03;
+    animation: orange-blue 1s infinite;
+
+}
+.grid > .l-6{
+    background: #170550;
+    animation: blue-orange 1s infinite;
+
+}
+
+.grid > .l-7{
+    background: #F86F03;
+    animation: orange-blue 1s infinite;
+
+}
+.grid > .l-8{
+    background: #170550;
+    animation: blue-orange 1s infinite;
+
+}
+.grid > .l-9{
+    background: #F86F03;
+    animation: orange-blue 1s infinite;
+
+}
+
+@keyframes orange-blue {
+    0%{
+            background: #F86F03;
+    }
+
+    50%{
+            background: #170550;
+    }
+
+    100%{
+            background: #F86F03;    
+        }
+}
+@keyframes blue-orange {
+    0%{
+            background: #170550;
+    }
+
+    50%{
+            background: #F86F03;
+    }
+
+    100%{
+            background: #170550;    
+        }
+}
+
 /* ///////////////////  Banner  ////////////////////// */
 
 .banner{
@@ -397,14 +503,11 @@ header .logo a:hover{
 /* ////////////////////////portfolio     */
 
 .portfolio{
+    height: auto;
     padding: 100px 0;
     background: #170550;
 }
 
-.portfolio-all{
-
-
-}
 
 .portfolio-all .cards{
     width: 80%;
@@ -412,13 +515,21 @@ header .logo a:hover{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+    transition: transform 1s ease-in-out;
+
 }
 
 .portfolio-all .cards .card{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+
 }
+
+/* .cards.show{
+    transform: translateY(0);
+} */
+
 
 .portfolio-all .cards .card img{
     width: 100%;
@@ -467,6 +578,7 @@ header .logo a:hover{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 
 /* ////////////////////// */
