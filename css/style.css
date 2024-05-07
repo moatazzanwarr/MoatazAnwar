@@ -9,6 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 header{
     height: 100px;
     background: #170550;
@@ -133,7 +134,7 @@ header .logo a:hover{
 }
 
 
-/* ///////////////  Loding   ////////////// */
+/* ///////////////  Loding Animation  ////////////// */
 
 
 .loding{
@@ -149,16 +150,48 @@ header .logo a:hover{
     justify-content: center;
 }
 
-.grid{
+.loding .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex div{
+    width: 30px;
+    height: 30px;
+    background: #F86F03;
+    margin: 0 10px;
+    border-radius: 50%;
+    animation-name: up-and-down;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.grid .d-2{
+    animation-delay: .3s;
+}
+.grid .d-3{
+    animation-delay: .6s;
+}
+
+@keyframes up-and-down {
+    to{
+        opacity: .2;
+        transform: translateY(-20px);
+    }
+}
+
+/* .grid{
     width: 80px;
     height: 80px;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1px;
-}
+} */
 
-.an{
+/* .an{
     border-radius: 2px;
     -webkit-box-shadow: -4px 7px 52px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 7px 52px 0px rgba(0,0,0,0.75);
@@ -237,7 +270,7 @@ header .logo a:hover{
     100%{
             background: #C40C0C;    
         }
-}
+} */
 
 /* ///////////////////  Banner  ////////////////////// */
 
@@ -246,6 +279,7 @@ header .logo a:hover{
     background: #31065A;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .banner .banner-par{
@@ -352,7 +386,7 @@ header .logo a:hover{
     padding: 100px 0;
     background: #170550;
     overflow: hidden;
-
+    overflow: hidden;
 }
 
 .about-all{
@@ -505,12 +539,14 @@ header .logo a:hover{
 
 
 
-/* ////////////////////////portfolio     */
+/* //////////////////////  Portfolio  //////////////// */
 
 .portfolio{
     height: auto;
     padding: 100px 0;
     background: #170550;
+    overflow: hidden;
+
 }
 
 
@@ -530,11 +566,6 @@ header .logo a:hover{
     border-radius: 10px;
 
 }
-
-/* .cards.show{
-    transform: translateY(0);
-} */
-
 
 .portfolio-all .cards .card img{
     width: 100%;
@@ -586,11 +617,13 @@ header .logo a:hover{
 
 
 
-/* ////////////////////// */
+/* //////////////////////  Contact  //////////////*/
 
 .contact{
     background: #31065A;
     padding: 100px 0;
+    overflow: hidden;
+
 }
 
 .contact-all-pr{
